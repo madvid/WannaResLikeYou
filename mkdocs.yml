@@ -1,4 +1,5 @@
 site_name: Wanna Res Like You
+site_url: https://madvid.github.io/WannaResLikeYou
 nav:
   - Home: index.md
   - About: about.md
