@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wannareslikeyou"
+version = "0.1.0"
+description = "Python-based super resolution tool designed to bring vintage photos into high-definition. Dual aspect of this project is to explore and apply image processing techniques to enhances the quality and clarity of historical black-and-white images."
+authors = ["madvid <mdavid@student.42.fr>"]
+license = "Attribution-NonCommercial-ShareAlike 4.0 International"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+mkdocs-material = "^9.5.31"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
