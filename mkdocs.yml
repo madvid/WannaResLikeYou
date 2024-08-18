@@ -3,6 +3,24 @@ site_name: Wanna Res Like You
 site_url: https://madvid.github.io/WannaResLikeYou
 site_author: madvid
 
+# Configuration
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  # emoji reltated
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # admonition related
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  # annotation related
+  - md_in_html
+
+
 # Repository
 repo_name: madvid/WannaResLikeYou
 repo_url: https://github.com/madvid/WannaResLikeYou
@@ -10,19 +28,65 @@ repo_url: https://github.com/madvid/WannaResLikeYou
 nav:
   - Home: index.md
   - About: about.md
+  - Users:
+    - Usage: Users/usage.md
+    - How to use CLI: Users/how_to_cli.md
+    - How to use app in local: Users/how_to_local_app.md
+    - How to deploy the app: Users/how_to_deployement.md
+  - Developers:
+    - Overview: Developers/overview.md
+    - Getting Started: Developers/getting_started.md
+    - Components: Developers/components.md
+    - Workflow: Developers/workflow.md
 theme:
   name: material
-  palette: 
+  icon:
+    logo: material/music-circle
+  palette:
     # Palette toggle for light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: amber
+      accent: yellow
       toggle:
-        icon: material/brightness-4 
+        icon: material/brightness-7 
         name: Switch to dark mode
     # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: amber
+      accent: yellow
       toggle:
-        icon: material/brightness-2
+        icon: material/brightness-4
         name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
+  features:
+    # navigation reltated
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.path
+    - navigation.top
+    # table of content related
+    - toc.integrate
+    # search related
+    - search.suggest
+    - search.highlight
+    # related to header and footer
+    - header.autohide
+    - navigation.footer
+
+extra:
+  social:
+    - icon: material/linkedin
+      link: https://www.linkedin.com/in/matthieu-david-a3b182213/
+      name: matthieu david on Linkedin
+    - icon: material/github
+      link: https://github.com/madvid
+      name: madvid

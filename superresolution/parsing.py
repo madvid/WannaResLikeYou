@@ -1,9 +1,37 @@
-"""Functions related to parsingK"""
+"""Functions related to parsing"""
+
+from argparse import ArgumentParser
 from pathlib import Path
 from ruamel import yaml
 
 from schemas.config import Config
 from schemas.image import Image, ImageList
+
+def parser_builder():
+    """Creating the parser."""
+    
+    parser = ArgumentParser(prog="Super Resolution",
+                            description="Apply super resolution method to enhance image resolution.")
+    
+    parser.add_argument("-i",
+                        "--input",
+                        type=str,
+                        action="store_true",
+                        help="Input directories or files.")
+    parser.add_argument("-o",
+                        "--output",
+                        type=str,
+                        help="Ouput directory to save result images.")
+    parser.add_argument("-m",
+                        "--method",
+                        type=str,
+                        choices=["Algo1", "Algo2", "Algo3"],
+                        help="name of the super resolution method to apply.")
+    parser.add_argument("-c",
+                        "--config",
+                        type=str,
+                        help="Configuration file describing the hyperparameter of the method.")
+    return parser
 
 def parsing_config(config_file: str) -> Config:
     """Description."""
