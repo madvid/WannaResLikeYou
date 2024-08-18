@@ -1,7 +1,7 @@
 # Project information
 site_name: Wanna Res Like You
 site_url: https://madvid.github.io/WannaResLikeYou
-site_author: Matthieu David
+site_author: madvid
 
 # Repository
 repo_name: madvid/WannaResLikeYou
@@ -16,12 +16,12 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-4 
         name: Switch to dark mode
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
-        icon: material/brightness-4
+        icon: material/brightness-2
         name: Switch to light mode
   font:
     text: Roboto
