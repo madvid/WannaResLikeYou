@@ -27,7 +27,19 @@
 
 
 ## Features
-Lorem ipsum
+### Interpolation entrypoint
+
+The interpolate feature allows users to apply different interpolation methods to images using OpenCV. This feature supports four interpolation methods: linear, nearest, cubic, and lanczos4. It can be used to scale images by specific x and y factors.
+
+This feature can be accessed via the interpolate entry point, which accepts an input image, a configuration file specifying the interpolation method and scaling factors, and generates an output image.
+Supported Interpolation Methods
+
+* **Linear interpolation**: Suitable for simple resizing tasks with minimal image distortion.
+* **Nearest-neighbor interpolation**: Fastest method, best for categorical images but can result in pixelated edges.
+* **Cubic interpolation**: Produces smoother images with better quality when upscaling.
+* **Lanczos interpolation**: A high-quality downsampling and upscaling method that preserves fine details in the image.
+
+See specific documentation for more detailled [Interpolation feature](Users/methods/interpolations.md)
 
 
 ## Installation
