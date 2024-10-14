@@ -33,6 +33,10 @@ nav:
     - How to use CLI: Users/how_to_cli.md
     - How to use app in local: Users/how_to_local_app.md
     - How to deploy the app: Users/how_to_deployement.md
+    - methods:
+      - Frequency based: frequency_based.md
+      - Traditional interpolation based: interpolations.md
+      - Deep learning based: learning_based.md
   - Developers:
     - Overview: Developers/overview.md
     - Getting Started: Developers/getting_started.md
