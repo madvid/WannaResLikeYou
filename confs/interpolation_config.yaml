@@ -1,0 +1,4 @@
+interpolator:
+  method: "lanczos4"
+x_factor: 3
+y_factor: 3
