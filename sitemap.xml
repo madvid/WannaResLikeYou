@@ -2,52 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/about/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Developers/components/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Developers/getting_started/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Developers/overview/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Developers/workflow/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Users/how_to_cli/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Users/how_to_deployement/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Users/how_to_local_app/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
     </url>
     <url>
          <loc>https://madvid.github.io/WannaResLikeYou/Users/usage/</loc>
-         <lastmod>2024-08-18</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://madvid.github.io/WannaResLikeYou/Users/methods/frequency_based/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://madvid.github.io/WannaResLikeYou/Users/methods/interpolations/</loc>
+         <lastmod>2024-10-14</lastmod>
+    </url>
+    <url>
+         <loc>https://madvid.github.io/WannaResLikeYou/Users/methods/learning_based/</loc>
+         <lastmod>2024-10-14</lastmod>
     </url>
 </urlset>
