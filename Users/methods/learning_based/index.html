@@ -10,9 +10,13 @@
         <meta name="author" content="madvid">
       
       
-        <link rel="canonical" href="https://madvid.github.io/WannaResLikeYou/Users/methods/interpolations/">
+        <link rel="canonical" href="https://madvid.github.io/WannaResLikeYou/Users/methods/learning_based/">
       
       
+        <link rel="prev" href="../interpolations/">
+      
+      
+        <link rel="next" href="../../../Developers/overview/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Interpolations - Wanna Res Like You</title>
+        <title>Deep learning based - Wanna Res Like You</title>
       
     
     
@@ -71,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#image-interpolation-feature" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -108,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Interpolations
+              Deep learning based
             
           </span>
         </div>
@@ -243,10 +242,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../usage/" class="md-tabs__link">
           
   
@@ -373,25 +374,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -402,7 +408,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Users
@@ -497,25 +503,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -526,7 +537,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             methods
@@ -540,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../frequency_based.md" class="md-nav__link">
+      <a href="../frequency_based/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -561,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interpolations.md" class="md-nav__link">
+      <a href="../interpolations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -579,10 +590,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../learning_based.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -591,6 +609,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -760,70 +779,58 @@
   
 
 
+  <h1>Deep learning based</h1>
+
 <ol>
 <li>
-<p>Traditional Interpolation Methods</p>
-<p>Nearest Neighbor Interpolation:
-    Simplest form of interpolation that assigns the nearest pixel value to the new pixel.
-    Fast but can lead to blocky images, especially at higher scaling factors.
-Bilinear Interpolation:
-    Considers the closest 2x2 neighborhood of known pixel values surrounding the unknown pixel.
-    Averages the four nearest pixels, resulting in smoother images than nearest neighbor but can still blur edges.
-Bicubic Interpolation:
-    Considers the closest 4x4 neighborhood of known pixel values.
-    Produces smoother and sharper images than bilinear, with better edge preservation, but at a higher computational cost.
-Spline Interpolation:
-    Uses polynomial functions to interpolate between pixels, resulting in smooth curves.
-    Can preserve more detail and sharpness but can be computationally expensive.</p>
+<p>Learning-Based Methods</p>
+<p>Dictionary Learning:
+    Involves learning a dictionary of image patches from high-resolution images, which is then used to reconstruct a higher-resolution version of the input.
+    Can produce good results but requires a large amount of training data and is computationally expensive.
+Sparse Coding:
+    Similar to dictionary learning, it reconstructs images using a sparse representation of high-resolution image patches.
+    Effective for detailed textures and patterns but may struggle with smooth areas.</p>
 </li>
 <li>
-<p>Edge-Directed Interpolation</p>
-<p>New Edge-Directed Interpolation (NEDI):
-    Aims to preserve edges by adjusting the interpolation process based on local edge directions.
-    Improves image sharpness, especially along edges, but can be more complex to implement.
-Iterative Back Projection (IBP):
-    Iteratively refines an image by comparing the downsampled image with the original lower-resolution image, focusing on maintaining edge detail.
-    This iterative process can produce high-quality images but is computationally intensive.</p>
+<p>Deep Learning-Based Methods</p>
+<p>Convolutional Neural Networks (CNNs):
+    Specialized CNN architectures (e.g., SRCNN, VDSR) are designed to learn the mapping from low-resolution to high-resolution images.
+    Typically produces superior results compared to traditional methods, especially in preserving fine details and textures.
+Generative Adversarial Networks (GANs):
+    Networks like SRGAN use a generator to create high-resolution images and a discriminator to differentiate between real and generated images, leading to more realistic outputs.
+    Can produce very sharp and realistic images but are difficult to train and may generate artifacts.
+Transformers:
+    More recent approaches involve using Transformer architectures to model long-range dependencies in the image, improving the quality of upscaled images.
+    These methods are cutting-edge but require substantial computational resources.</p>
+</li>
+<li>
+<p>Hybrid Methods</p>
+<p>Combination of Interpolation and Learning-Based Techniques:
+    Some methods combine traditional interpolation techniques with deep learning for refinement.
+    For instance, an initial upscaled image might be generated using bicubic interpolation, which is then refined using a CNN or GAN.
+Perceptual Loss-Based Methods:
+    Use loss functions that focus on perceptual similarity rather than pixel-wise accuracy (e.g., SSIM loss, perceptual loss based on VGG features).
+    Aims to generate images that are visually closer to the ground truth even if they are not pixel-perfect.</p>
+</li>
+<li>
+<p>Example-Based Super-Resolution</p>
+<p>Patch-Based Methods:
+    These methods upscale images by matching patches of low-resolution images with a database of high-resolution patches.
+    Requires a large database of examples and can be time-consuming but produces good results, especially for textures.
+Self-Example-Based Super-Resolution:
+    Uses the input image itself as the database by finding similar patches within the image, exploiting the self-similarity property of natural images.
+    Can work well for images with repetitive patterns.</p>
+</li>
+<li>
+<p>Reconstruction-Based Methods</p>
+<p>Total Variation Regularization:
+    Uses optimization techniques to minimize noise and enforce smoothness while preserving edges during upscaling.
+    Can reduce artifacts and improve edge sharpness but may smooth out fine details.
+Maximum a Posteriori (MAP) Estimation:
+    Formulates super-resolution as a probabilistic inference problem, finding the most probable high-resolution image given the low-resolution input.
+    Can incorporate various prior knowledge, such as smoothness or edge-preserving priors, to improve results.</p>
 </li>
 </ol>
-<h1 id="image-interpolation-feature">Image Interpolation Feature</h1>
-<h2 id="overview">Overview</h2>
-<p>The <code>interpolate</code> feature allows users to apply different interpolation methods to images using OpenCV. This feature supports four interpolation methods: <strong>linear</strong>, <strong>nearest</strong>, <strong>cubic</strong>, and <strong>lanczos4</strong>. It can be used to scale images by specific x and y factors.</p>
-<p>This feature can be accessed via the <code>interpolate</code> entry point, which accepts an input image, a configuration file specifying the interpolation method and scaling factors, and generates an output image.</p>
-<h2 id="supported-interpolation-methods">Supported Interpolation Methods</h2>
-<p><strong>Linear interpolation</strong>: Suitable for simple resizing tasks with minimal image distortion.
-<strong>Nearest-neighbor interpolation</strong>: Fastest method, best for categorical images but can result in pixelated edges.
-<strong>Cubic interpolation</strong>: Produces smoother images with better quality when upscaling.
-<strong>Lanczos interpolation</strong>: A high-quality downsampling and upscaling method that preserves fine details in the image.</p>
-<hr />
-<h2 id="usage">Usage</h2>
-<p>The entry point for using this feature is <code>interpolate.py</code>. Below is the detailed usage information:</p>
-<div class="highlight"><pre><span></span><code>usage:<span class="w"> </span>interpolate.py<span class="w"> </span><span class="o">[</span>-h<span class="o">]</span><span class="w"> </span>--input<span class="w"> </span>INPUT<span class="w"> </span>--output<span class="w"> </span>OUTPUT<span class="w"> </span><span class="o">[</span>--overwrite<span class="w"> </span>OVERWRITE<span class="o">]</span><span class="w"> </span>--config<span class="w"> </span>CONFIG
-
-options:
-<span class="w">  </span>-h,<span class="w"> </span>--help<span class="w">            </span>Show<span class="w"> </span>this<span class="w"> </span><span class="nb">help</span><span class="w"> </span>message<span class="w"> </span>and<span class="w"> </span>exit.
-<span class="w">  </span>--input<span class="w"> </span>INPUT,<span class="w"> </span>-i<span class="w"> </span>INPUT
-<span class="w">                        </span>Path<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>input<span class="w"> </span>image.
-<span class="w">  </span>--output<span class="w"> </span>OUTPUT,<span class="w"> </span>-o<span class="w"> </span>OUTPUT
-<span class="w">                        </span>Path<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>output<span class="w"> </span>image.
-<span class="w">  </span>--overwrite<span class="w"> </span>OVERWRITE,<span class="w"> </span>-f<span class="w"> </span>OVERWRITE
-<span class="w">                        </span>Flag<span class="w"> </span>to<span class="w"> </span>allow<span class="w"> </span>overwriting<span class="w"> </span>the<span class="w"> </span>output<span class="w"> </span>file.
-<span class="w">  </span>--config<span class="w"> </span>CONFIG,<span class="w"> </span>-c<span class="w"> </span>CONFIG
-<span class="w">                        </span>Path<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>configuration<span class="w"> </span>file<span class="w"> </span>specifying<span class="w"> </span>interpolation<span class="w"> </span>parameters.
-</code></pre></div>
-<h2 id="example">Example</h2>
-<div class="highlight"><pre><span></span><code>python<span class="w"> </span>interpolate.py<span class="w"> </span>--input<span class="w"> </span>image.jpg<span class="w"> </span>--output<span class="w"> </span>resized_image.png<span class="w"> </span>--config<span class="w"> </span>config.json
-</code></pre></div>
-<p>In this example:</p>
-<ul>
-<li><code>--input</code> is the path to the source image to be interpolated.</li>
-<li><code>--output</code> is the path where the resized image will be saved.</li>
-<li><code>--config</code> points to a configuration file specifying the interpolation method and scaling factors (described below).</li>
-</ul>
-<h3 id="input-image-example">Input image example</h3>
-<p><img alt="" src="../../../examples/sources/origines_du_lindy_hop.jpeg" /></p>
-<h3 id="output-image-example">Output image example</h3>
-<p><img alt="" src="../../../examples/sources/origines_du_lindy_hop.jpeg" /></p>
 
 
 
@@ -854,6 +861,44 @@ options:
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../interpolations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Traditional interpolation based">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Traditional interpolation based
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../../Developers/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Overview">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Overview
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

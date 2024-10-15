@@ -10,9 +10,13 @@
         <meta name="author" content="madvid">
       
       
-        <link rel="canonical" href="https://madvid.github.io/WannaResLikeYou/Users/methods/learning_based/">
+        <link rel="canonical" href="https://madvid.github.io/WannaResLikeYou/Users/methods/frequency_based/">
       
       
+        <link rel="prev" href="../../how_to_deployement/">
+      
+      
+        <link rel="next" href="../interpolations/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +24,7 @@
     
     
       
-        <title>Learning based - Wanna Res Like You</title>
+        <title>Frequency based - Wanna Res Like You</title>
       
     
     
@@ -103,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Learning based
+              Frequency based
             
           </span>
         </div>
@@ -238,10 +242,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../usage/" class="md-tabs__link">
           
   
@@ -368,25 +374,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -397,7 +408,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Users
@@ -492,25 +503,30 @@
                 
   
   
+    
   
   
+  
     
     
     
       
       
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
-          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -521,7 +537,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             methods
@@ -532,10 +548,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../../frequency_based.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -544,6 +567,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -556,7 +580,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../interpolations.md" class="md-nav__link">
+      <a href="../interpolations/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,7 +601,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../learning_based.md" class="md-nav__link">
+      <a href="../learning_based/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -755,56 +779,17 @@
   
 
 
-  <h1>Learning based</h1>
+  <h1>Frequency based</h1>
 
 <ol>
 <li>
-<p>Learning-Based Methods</p>
-<p>Dictionary Learning:
-    Involves learning a dictionary of image patches from high-resolution images, which is then used to reconstruct a higher-resolution version of the input.
-    Can produce good results but requires a large amount of training data and is computationally expensive.
-Sparse Coding:
-    Similar to dictionary learning, it reconstructs images using a sparse representation of high-resolution image patches.
-    Effective for detailed textures and patterns but may struggle with smooth areas.</p>
-</li>
-<li>
-<p>Deep Learning-Based Methods</p>
-<p>Convolutional Neural Networks (CNNs):
-    Specialized CNN architectures (e.g., SRCNN, VDSR) are designed to learn the mapping from low-resolution to high-resolution images.
-    Typically produces superior results compared to traditional methods, especially in preserving fine details and textures.
-Generative Adversarial Networks (GANs):
-    Networks like SRGAN use a generator to create high-resolution images and a discriminator to differentiate between real and generated images, leading to more realistic outputs.
-    Can produce very sharp and realistic images but are difficult to train and may generate artifacts.
-Transformers:
-    More recent approaches involve using Transformer architectures to model long-range dependencies in the image, improving the quality of upscaled images.
-    These methods are cutting-edge but require substantial computational resources.</p>
-</li>
-<li>
-<p>Hybrid Methods</p>
-<p>Combination of Interpolation and Learning-Based Techniques:
-    Some methods combine traditional interpolation techniques with deep learning for refinement.
-    For instance, an initial upscaled image might be generated using bicubic interpolation, which is then refined using a CNN or GAN.
-Perceptual Loss-Based Methods:
-    Use loss functions that focus on perceptual similarity rather than pixel-wise accuracy (e.g., SSIM loss, perceptual loss based on VGG features).
-    Aims to generate images that are visually closer to the ground truth even if they are not pixel-perfect.</p>
-</li>
-<li>
-<p>Example-Based Super-Resolution</p>
-<p>Patch-Based Methods:
-    These methods upscale images by matching patches of low-resolution images with a database of high-resolution patches.
-    Requires a large database of examples and can be time-consuming but produces good results, especially for textures.
-Self-Example-Based Super-Resolution:
-    Uses the input image itself as the database by finding similar patches within the image, exploiting the self-similarity property of natural images.
-    Can work well for images with repetitive patterns.</p>
-</li>
-<li>
-<p>Reconstruction-Based Methods</p>
-<p>Total Variation Regularization:
-    Uses optimization techniques to minimize noise and enforce smoothness while preserving edges during upscaling.
-    Can reduce artifacts and improve edge sharpness but may smooth out fine details.
-Maximum a Posteriori (MAP) Estimation:
-    Formulates super-resolution as a probabilistic inference problem, finding the most probable high-resolution image given the low-resolution input.
-    Can incorporate various prior knowledge, such as smoothness or edge-preserving priors, to improve results.</p>
+<p>Frequency Domain Methods</p>
+<p>Fourier Transform-Based Methods:
+    Uses Fourier analysis to increase resolution by estimating high-frequency components (which correspond to fine details) in the image.
+    Can preserve details but may introduce artifacts if high-frequency components are incorrectly estimated.
+Wavelet Transform-Based Methods:
+    Wavelets allow multi-resolution analysis, which can be used to enhance image resolution at different scales.
+    Often used in combination with other techniques for better results.</p>
 </li>
 </ol>
 
@@ -837,6 +822,44 @@ Maximum a Posteriori (MAP) Estimation:
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../how_to_deployement/" class="md-footer__link md-footer__link--prev" aria-label="Previous: How to deploy the app">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                How to deploy the app
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../interpolations/" class="md-footer__link md-footer__link--next" aria-label="Next: Traditional interpolation based">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Traditional interpolation based
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
